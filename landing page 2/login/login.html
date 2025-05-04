@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coffee App Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        .background {
+            background-image: url('/landing page 2/Landing_images/coffee-background.jpeg'); /* Your coffee beans image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: brightness(0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        #loginPage, #signupPage {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            background-color: white;
+            color: black;
+            border: none;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #ddd;
+            }
+
+        a, span {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #fff;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <div class="content">
+        <div class="logo">☕</div>
+
+        <div id="loginPage">
+            <input type="text" id="username" placeholder="Username" />
+            <input type="password" id="password" placeholder="Password" />
+            <a href="#">Forgot Password?</a>
+            <button onclick="login()">Login</button>
+            <p>Don't have an account? <span onclick="showSignup()">Sign Up</span></p>
+        </div>
+
+        <div id="signupPage" class="hidden">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <button onclick="signup()">Sign Up</button>
+        </div>
+    </div>
+
+    <script>
+        const accounts = [
+            { username: 'tunjina', password: 'tunjina' },
+            { username: 'mahnoor', password: 'mahnoor' },
+            { username: 'seher', password: 'seher' }
+        ];
+
+        function showSignup() {
+            document.getElementById('loginPage').style.display = 'none';
+            document.getElementById('signupPage').style.display = 'block';
+        }
+
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            const account = accounts.find(acc => acc.username === username && acc.password === password);
+            if (account) {
+                window.location.href = 'landingpage.html';
+            } else {
+                alert("Invalid username or password.");
+            }
+        }
+
+        function signup() {
+            alert("Signed up!");
+        }
+
+        // Enable login with Enter key
+        document.addEventListener('keydown', function (e) {
+            const usernameField = document.getElementById('username');
+            const passwordField = document.getElementById('password');
+
+            if (e.key === 'Enter') {
+                if (document.activeElement === usernameField) {
+                    // Focus on the password field when Enter is pressed on username field
+                    passwordField.focus();
+                } else if (document.activeElement === passwordField) {
+                    // Trigger login when Enter is pressed on password field
+                    login();
+                }
+            }
+        });
+    </script>
+</body>
+</html>

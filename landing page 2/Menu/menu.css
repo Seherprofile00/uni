@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+@media (max-width: 900px) {
+    .menu-card {
+        flex: 0 0 calc(50% - 20px); /* 2 per row on tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-card {
+        flex: 0 0 100%; /* 1 per row on mobile */
+    }
+}

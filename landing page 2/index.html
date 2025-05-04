@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header  >
+        <nav >
+
+            <h1 data-aos="fade-left">Coffee<span>.</span></h1>
+
+            <ul>
+                <li><a href="/landing page 2/index.html" data-aos="fade-down">Home</a></li>
+                <li><a href="/landing page 2/Menu/menu.html"data-aos="fade-down">Menu</a></li>
+                <li><a href="/landing page 2/About us/about.html" data-aos="fade-down">About Us</a></li>
+                <li><a href="#" data-aos="fade-down">Contact us</a></li>
+                <li><a href="/landing page 2/login/login.html" data-aos="fade-down">Login</a></li>
+            </ul>
+                 <!-- Hamburger Menu Icon -->
+        <div class="hamburger" id="hamburger" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+        </div>
+        </nav>
+    </header>
+    <!-- Sidebar (visible only on small screens) -->
+<div class="sidebar" id="sidebar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Menu/menu.html">Menu</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="login/login.html">Login</a></li>
+    </ul>
+</div>
+
+    <section class="hero">
+        <div class="hero-content" data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine">
+            <h2>Start Your Day With A <br> <span>Fresh Coffee</span></h2>
+            <p>Coffee is a popular and beloved beverage enjoyed by people around the world.</p>
+            <a href="#" class="btn" data-aos="zoom-in-right">Order Now</a>
+        </div>
+    </section>
+    <section class="about" data-aos="fade-up">
+        <h2>About Coffee</h2>
+        <p >
+            Coffee Wagera (CW) was launched in April 2018, with a dream to become the biggest and the best coffee brand
+            of Pakistan!
+            From the beginning, there’s a clear focus on social responsibility which includes staff welfare, low-waste
+            practices,
+            supporting women’s empowerment and inclusivity.
+        </p>
+
+        <div class="about-container" data-aos="fade-up">
+            <div class="about-card">
+                <img  src="Landing_images/location-removebg-preview.png" alt="Location">
+                <p>Pakistan’s largest coffee brand with 13 locations in 4 cities, in less than 7 years!</p>
+            </div>
+            <div class="about-card">
+                <img src="Landing_images/pic_2-removebg-preview.png" alt="Workspace">
+                <p>Dine-in locations also offer free workspace, free wifi, free drinking water!</p>
+            </div>
+            <div class="about-card">
+                <img src="Landing_images/icon_2-removebg-preview.png" alt="Coffee">
+                <p class="tooltip">Excellent coffees with freshly roasted beans from local roaster.</p>
+            </div>
+            <div class="about-card">
+                <img src="Landing_images/icon_3-removebg-preview.png" alt="Discount">
+                <p>Low prices with special discounts for students and senior citizens.</p>
+            </div>
+            <div class="about-card">
+                <img src="Landing_images/icon-4-removebg-preview.png" alt="Women Support">
+                <p>We support women entrepreneurs, low-waste practices and inclusion.</p>
+            </div>
+            <div class="about-card">
+                <img src="Landing_images/Home-App-Icon-removebg-preview.png" alt="Loyalty">
+                <p>We have a loyalty app, online store and barista academy too!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="more"></section>
+    <div class="founder-section" data-aos="zoom-in" data-aos-delay="100">
+        <div class="founder-text">
+            <h2>Our Founder & Chief Happiness Officer</h2>
+            <p>Mush Panjwani has been a sales, marketing, and training expert for over 35 years.
+                He has worked with corporates, leaders, and entrepreneurs in 20 countries.
+                Mush is also the author of <em>Dhinchak Life</em>, a book about living a fantastic life!</p>
+            <p>Mush launched Coffee Wagera on 1st April 2018 with a dream of making it the best
+                and the biggest coffee brand across Pakistan.</p>
+            <p>Mush is also a certified ‘happiness trainer’ and trains at corporates and non-profits.
+                More about Mush at <a href="https://www.MushPanjwani.com" target="_blank">www.MushPanjwani.com</a></p>
+        </div>
+        <div class="founder-image">
+            <img src="Landing_images/uncle pic.png" alt="Landing_images/Mush Panjwani">
+        </div>
+    </div>
+    </section>
+    <section class="order-now">
+        <h2 data-aos="fade-up"
+       >Order Now</h2>
+
+        <p style="color: black;" data-aos="fade-up"
+        >From a full range of hot/cold coffees, other beverages and snacks.</p>
+
+
+        <div class="menu-container" data-aos="flip-down">
+            <div class="menu-item">
+                <img src="Landing_images/1 pic.jpg" alt="Cold Beverage">
+                <div class="overlay">
+                    <h3>Cold Beverage</h3>
+                    <p>Chill with our signature brews served cold for your pleasure.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="Landing_images/images (1).jpg" alt="Savories">
+                <div class="overlay">
+                    <h3>Savories</h3>
+                    <p>Experience homemade delights from our local vendors.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="Landing_images/pic 3.jpg" alt="Dessert">
+                <div class="overlay">
+                    <h3>Dessert</h3>
+                    <p>Delightful treats to pair with your coffee cravings!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="social-media" data-aos="zoom-in" data-aos-delay="100">
+            <h2>Follow Us On</h2>
+            <div class="icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Landing_images/CW-Dark-Logo (1).png" alt="Landing_images/Coffee Wagera Logo">
+                <p>CW was launched in April 2018, with a dream to become the biggest and the best coffee brand of
+                    Pakistan!</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Our Values</a></li>
+                    <li><a href="#">Our SOPs</a></li>
+                    <li><a href="#">Our Founder</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-info">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">Franchising</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Jobs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-app">
+                <h3>CW App</h3>
+                <a href="#"><img src="Landing_images/Google-Play.png" alt="Google Play"></a>
+                <a href="#"><img src="Landing_images/App-Store.png" alt="App Store"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS
+    </script>
+
+<script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('active');
+    }
+</script>
+
+
+</body>
+
+</html>
